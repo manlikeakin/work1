@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manlike_akin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images (5).png" class="menu-icon" onclick="openmenu()">
+        <div class="menu-box" id="menu">
+            <div class="right-links">
+                <a href="#">Get Started</a>
+                <img src="close3.png" onclick="closemenu()">
+            </div>
+            <div class="menu-links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Our Services</a>
+                <a href="#">Products</a>
+                <a href="#">Contact Us</a>
+             </div>
+        </div>
+    </div>
+    <script>
+        var menu = document.getElementById('menu');
+
+        function closemenu(){
+            menu.style.top = "-200vh";
+        }
+        function openmenu(){
+            menu.style.top = "17%";
+        }
+    </script>
+</body>
+</html>
